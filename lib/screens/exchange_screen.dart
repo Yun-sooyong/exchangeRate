@@ -18,7 +18,21 @@ class _ExchangeScreenState extends State<ExchangeScreen> {
           height: screenHeight * 0.7,
           width: screenWidth,
           color: Colors.white,
-          child: Text('Exchange Rate'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Card(
+                color: Colors.amber,
+              ),
+              Card(
+                color: Colors.blueGrey,
+              ),
+              Card(
+                color: Colors.deepPurple,
+              ),
+            ],
+          ),
         ),
         Center(
           child: ElevatedButton(
